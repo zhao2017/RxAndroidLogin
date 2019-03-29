@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 28
@@ -32,6 +31,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
     implementation "io.reactivex:rxjava:1.1.0"
     implementation 'io.reactivex:rxandroid:1.1.0'
     // gson
@@ -41,8 +42,11 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
+    implementation 'com.alibaba:fastjson:1.1.70.android'
     // picasso po
     implementation('com.squareup.picasso:picasso:2.71828') {
         exclude group: 'com.android.support'
     }
+
+    implementation ("com.squareup.okhttp3:okhttp:3.14.0")
 }
